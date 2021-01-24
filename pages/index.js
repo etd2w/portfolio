@@ -3,8 +3,10 @@ import Navbar from "../Components/Navbar";
 
 export default function Home() {
   return (
-    <Container>
-      <Navbar />
-    </Container>
+    <div className="flex justify-center items-center h-screen">
+      <Container>
+        <Navbar />
+      </Container>
+    </div>
   );
 }

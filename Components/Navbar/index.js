@@ -29,13 +29,13 @@ export default function Navbar() {
 
       <nav>
         <div className="grid grid-cols-3 border-t-5 border-primary">
-          <button className="py-4 sm:py-6 uppercase font-bold text-lg sm:text-2xl bg-secondary-100">
+          <button className="py-4 sm:py-6 uppercase font-bold text-lg sm:text-2xl bg-secondary-100 hover:text-ternary">
             Home
           </button>
-          <button className="py-4 sm:py-6 uppercase font-bold text-lg sm:text-2xl bg-secondary-100 border-l-3 border-r-3 border-primary">
+          <button className="py-4 sm:py-6 uppercase font-bold text-lg sm:text-2xl bg-secondary-100 hover:text-ternary border-l-3 border-r-3 border-primary">
             About
           </button>
-          <button className="py-4 sm:py-6 uppercase font-bold text-lg sm:text-2xl bg-secondary-100">
+          <button className="py-4 sm:py-6 uppercase font-bold text-lg sm:text-2xl bg-secondary-100 hover:text-ternary">
             Projects
           </button>
         </div>

@@ -1,4 +1,4 @@
-export default function ProjectCard({ name, desc, links }) {
+export default function ProjectCard({ name, desc, links, tools }) {
   return (
     <div className="space-y-4 text-primary">
       <div className="flex justify-between items-end">
@@ -8,7 +8,7 @@ export default function ProjectCard({ name, desc, links }) {
         </div>
 
         <div>
-          <div className="flex border-5 border-primary">
+          <div className="flex font-bold border-3 border-primary">
             <div className="px-4 py-1 bg-secondary-200">
               <a href={links.live} className="underline">
                 Live
@@ -28,11 +28,15 @@ export default function ProjectCard({ name, desc, links }) {
       </div>
 
       <div className="flex">
-        <div className="flex border-5 border-primary">
-          <div className="px-4 py-1 text-xs uppercase font-bold ">React</div>
-          <div className="px-4 py-1 text-xs uppercase font-bold border-l-3 border-primary">
-            Styled components
-          </div>
+        <div className="flex border-t-3 border-b-3 border-r-3 border-primary">
+          {tools.map(tool => (
+            <div
+              key={tool.id}
+              className="px-4 py-1 text-xs uppercase font-bold border-l-3 border-primary"
+            >
+              {tool.name}
+            </div>
+          ))}
         </div>
       </div>
     </div>

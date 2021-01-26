@@ -11,7 +11,10 @@ const projects = [
       live: "#",
       source: "#",
     },
-    tools: ["React", "Styled components"],
+    tools: [
+      { name: "React", id: "01" },
+      { name: "Styled components", id: "02" },
+    ],
   },
   {
     id: "002",
@@ -21,7 +24,11 @@ const projects = [
       live: "#",
       source: "#",
     },
-    tools: ["Next.js", "Tailwind"],
+    tools: [
+      { name: "React", id: "01" },
+      { name: "Next.js", id: "02" },
+      { name: "Tailwind", id: "03" },
+    ],
   },
 ];
 
@@ -31,12 +38,13 @@ export default function Projects() {
       <Container>
         <Navbar />
 
-        <main className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16 pt-8">
+        <main className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 pt-8">
           {projects.map(project => (
             <ProjectCard
               name={project.name}
               desc={project.desc}
               links={project.links}
+              tools={project.tools}
               key={project.id}
             />
           ))}

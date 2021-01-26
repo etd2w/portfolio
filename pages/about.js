@@ -3,33 +3,17 @@ import Navbar from "../Components/Navbar";
 import FrontEndCard from "../Components/FrontEndCard";
 import BackEndCard from "../Components/BackEndCard";
 
-const skills = [
-  { id: "001", name: "HTML", icon: "" },
-  { id: "002", name: "CSS", icon: "" },
-  { id: "003", name: "JS", icon: "" },
-  { id: "004", name: "React", icon: "" },
-  { id: "005", name: "Redux", icon: "" },
-  { id: "006", name: "React router", icon: "" },
-  { id: "007", name: "Styled components", icon: "" },
-  { id: "008", name: "NodeJS", icon: "" },
-  { id: "009", name: "Express", icon: "" },
-  { id: "010", name: "Tailwind", icon: "" },
-  { id: "011", name: "Sass", icon: "" },
-  { id: "012", name: "Firebase", icon: "" },
-  { id: "013", name: "NextJS", icon: "" },
-];
-
 export default function About() {
   return (
     <div className="flex justify-center pt-4 md:pt-8 pb-4 md:pb-8">
       <Container>
         <Navbar />
-        <main>
+        <main className="md:grid md:grid-cols-2 md:gap-x-4 pt-4">
           <section className="pt-4">
-            <div className="font-bold text-center text-ternary">
-              <h2>About</h2>
+            <div className="font-bold text-ternary">
+              <h2 className="text-2xl">About</h2>
             </div>
-            <div className="pt-4 text-center">
+            <div className="pt-4">
               <p>
                 The RuhrJS is an annual, community-driven JavaScript conference
                 and the first of its kind in the metropolitan Ruhr Area in
@@ -42,11 +26,11 @@ export default function About() {
           </section>
 
           <section className="pt-4">
-            <div className="font-bold text-center text-ternary">
-              <h2>Skills</h2>
+            <div className="font-bold text-ternary">
+              <h2 className="text-2xl">Skills</h2>
             </div>
 
-            <div className="pt-4 ">
+            <div className="pt-4">
               <FrontEndCard />
               <BackEndCard />
             </div>

@@ -2,7 +2,7 @@ export default function FrontEndCard() {
   return (
     <div className="font-bold text-primary">
       <div className="flex">
-        <div className="py-2 px-4  border-t-5 border-r-5 border-b-2 border-l-5 border-primary bg-secondary-200">
+        <div className="py-2 px-4 border-t-5 border-r-5 border-b-2 border-l-5 border-primary bg-secondary-200">
           Front-end
         </div>
       </div>
